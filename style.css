@@ -14,12 +14,17 @@ body {
 .calculadora {
     display: flex;
     flex-direction: column;
-    width: 250px;
-    height: 200px;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    height: 40vh;
 }
 
 .pantalla {
     width: 100%;
+    height: 50px;
+    font-size: 30px;
+    text-align: right;
 }
 
 button {
@@ -33,5 +38,6 @@ button {
 .botones {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    width: 100%;
 }
