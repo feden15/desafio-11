@@ -10,23 +10,35 @@ pantalla.addEventListener('click', () => {
     pantalla.value = '0';
 });
 
+let contador = 0;
+
 botones.forEach(boton => {
     boton.addEventListener('click', () => {
 
         const valor = boton.textContent;
-        
-        if (valor === '=') {
-            operacion = eval(operacion)
-            pantalla.value = operacion
-        } else if ((operacion === 0) && (valor === '0')) {
-            pantalla.value = '0'
-        } else if (operacion === 0) {
-            operacion = valor
-            pantalla.value = operacion
+
+        if (contador < 13) {
+            if (valor === '=') {
+                operacion = eval(operacion)
+                pantalla.value = operacion
+                contador = 0;
+            } else if ((operacion === 0) && (valor === '0')) {
+                pantalla.value = '0'
+                contador = 0;
+            } else if (operacion === 0) {
+                operacion = valor
+                pantalla.value = operacion
+                contador ++
+            } else {
+                operacion = operacion + valor
+                pantalla.value = operacion
+                contador ++
+            }
         } else {
-            operacion = operacion + valor
-            pantalla.value = operacion
+            pantalla.value = 'Demasiados carácteres'
+            contador = operacion = 0
         }
+        
 
     });
 })
