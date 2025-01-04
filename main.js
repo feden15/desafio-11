@@ -17,7 +17,7 @@ botones.forEach(boton => {
 
         const valor = boton.textContent;
 
-        if (contador < 13) {
+        if (contador < 13) { /* cuando supere los 13 dígitos, muestra error en pantalla */
             if (valor === '=') {
                 operacion = eval(operacion)
                 pantalla.value = operacion

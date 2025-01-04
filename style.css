@@ -4,20 +4,17 @@
     box-sizing: border-box;
 }
 
-body {
+html {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
 
-.calculadora {
+body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: 30vw;
-    height: 40vh;
+    width: 450px;
+    height: 100vh;
 }
 
 .pantalla {
@@ -28,21 +25,19 @@ body {
     border-radius: 5px;
 }
 
-button {
-    width: 24%;
-    margin: 1px;
-    height: 50px;
-    font-size: 2rem;
-    border: 1px solid black;
-    border-radius: 5px;
-    background: #111;
-    color: #eee;
-}
-
-
 .botones {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;
+}
+
+button {
+    width: 24%;
+    margin: 1.5px;
+    height: 50px;
+    font-size: 2rem;
+    border-radius: 5px;
+    background: #111;
+    color: #eee;
 }
