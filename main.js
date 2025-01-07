@@ -13,6 +13,7 @@ pantalla.addEventListener('click', () => {
 let contador = 0;
 
 botones.forEach(boton => {
+
     boton.addEventListener('click', () => {
 
         const valor = boton.textContent;
@@ -35,10 +36,9 @@ botones.forEach(boton => {
                 contador ++
             }
         } else {
-            pantalla.value = 'Demasiados carácteres'
+            pantalla.value = 'Límite superado'
             contador = operacion = 0
         }
-        
 
     });
 })
