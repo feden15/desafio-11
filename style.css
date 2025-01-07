@@ -13,16 +13,18 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 450px;
+    width: 350px;
     height: 100vh;
 }
 
 .pantalla {
     width: 100%;
-    height: 50px;
-    font-size: 2rem;
+    height: 70px;
+    font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
     text-align: right;
     border-radius: 5px;
+    margin-bottom: 5px;
 }
 
 .botones {
@@ -30,13 +32,15 @@ body {
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;
+    height: 300px;
 }
 
 button {
+    margin: 1px;
     width: 24%;
-    margin: 1.5px;
-    height: 50px;
+    height: 75px;
     font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
     border-radius: 5px;
     background: #111;
     color: #eee;
