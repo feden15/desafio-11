@@ -20,7 +20,7 @@ botones.forEach(boton => {
 
         if (contador < 13) { /* cuando supere los 13 dígitos, muestra error en pantalla */
             if (valor === '=') {
-                operacion = eval(operacion)
+                operacion = eval(operacion.replace('x', '*'))
                 pantalla.value = operacion
                 contador = 0;
             } else if ((operacion === 0) && (valor === '0')) {

@@ -45,3 +45,12 @@ button {
     background: #111;
     color: #eee;
 }
+
+button:hover {
+    background: #333;
+    font-size: 2.5rem;
+}
+
+input:hover {
+    background-color: #BBB;
+}
